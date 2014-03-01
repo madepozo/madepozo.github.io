@@ -18,7 +18,7 @@
 	text-transform: none;
 	line-height: 50px;
 	font-size: 40px;
-	color: #000;
+	color: #767676;
 	transition: all 0.4s ease-out;
 
 	/* Better Font Rendering =========== */
@@ -30,8 +30,7 @@
 	content: "\e609";
 }
 
-.icon-twitter:hover
-{
+.icon-twitter:hover{
 	background: #55acee;
 	color: white;
 }
@@ -40,8 +39,7 @@
 	content: "\e601";
 }
 
-.icon-github:hover
-{
+.icon-github:hover{
 	background: #444;
 	color: #eee;
 }
@@ -50,8 +48,7 @@
 	content: "\e600";
 }
 
-.icon-facebook:hover
-{
+.icon-facebook:hover{
 	background: #3b5998;
 	color: white;
 }
@@ -60,8 +57,7 @@
 	content: "\e605";
 }
 
-.icon-linkedin:hover
-{
+.icon-linkedin:hover{
 	background: #44acff;
 	color: white;
 }
@@ -79,7 +75,8 @@
 
 body
 {
-	background: #fff;
+	background: #22a2D8;
+	font-family: 'Open sans';
 	font-size: 16px;
 }
 
@@ -88,38 +85,47 @@ header
 	background: #eee;
 	border-radius: 1em;
 	box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-	margin-bottom: 1em;
+	margin: 1em 0;
 }
 
 header .info
 {
-	padding: 0.2em;
 	font-size: 16px;	
+	padding: 0.2em;
 }
 
 header .info .title
 {
-	color: #444;
+	color: #323;
 	text-align: center;
 }
 
 header .info .description
 {
-	color: black;
-	font-size: 20px;
-	padding: 0 1.2em;
+	background: rgba(25,135,225,1);
+	border-bottom: 3px solid #ccc;
+	border-radius: 0.8em 0.8em 1em;
+	color: white;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 1em;
+	position: relative;
 	text-align: justify;
 }
 
-header .avatar, header nav
+header .social .avatar .nota
 {
-	display: inline-block;
-	vertical-align: middle;
+	position: absolute;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 15px solid rgba(25,135,225,1);
+	top: -30px;
+	left: 30%;
+	content: "";
 }
 
-header .avatar
-{
-	margin-left: 2em;
+header .avatar {
+	position: relative;
 }
 
 header .avatar img
@@ -130,8 +136,15 @@ header .avatar img
 
 header .avatar figcaption
 {
-	color: black;
+	color: #f40;
+	font-size: 1.1em;
 	text-align: center;
+}
+
+header nav .follow
+{
+	color: #f40;
+	font-size: 1.5em;
 }
 
 header nav ul
@@ -162,9 +175,33 @@ header nav ul li a
 	text-align: center;
 }
 
+header .social .avatar, header .social nav
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header .social
+{
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+header .social nav
+{
+	
+}
+
+header .social .avatar
+{
+	
+	margin: 0 1em;
+}
+
 .container
 {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0 auto;
 }
@@ -249,4 +286,59 @@ table thead tr
 table tr
 {
 	background: white;
+}
+
+@media screen and (min-width :700px){
+	.container
+	{
+		width: 85%;
+	}
+
+	header .avatar
+	{
+		margin-left: 5em;
+	}
+
+	header .info .description
+	{
+		width: 70%;
+		margin: 0.5em auto;
+	}
+
+}
+
+@media screen and (max-width: 550px){
+	[class^="icon-"], [class*=" icon-"] {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	header nav ul li a{
+		height: 38px;
+		padding: 0.2em;
+		width: 38px;
+	}
+
+	header .social .avatar
+	{
+		margin: 0;
+	}
+
+	header .info .description
+	{
+		font-size: 16px;
+	}
+
+	header .social .avatar .nota
+	{
+		top: -20px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	header .social .avatar .nota
+	{
+		display: none;
+	}
+
 }
