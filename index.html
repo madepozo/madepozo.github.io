@@ -1,10 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="angularCV">
 <head>
-	<meta charset="UTF-8">
-	<title>Home : madepozo</title>
+    <meta charset="UTF-8">
+    <title>CV - Madepozo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1" />
 </head>
-<body>
-	<h1>Welcome to my page</h1>
+<body ng-controller="mainController">
+    
+    <div class="container">
+        <header>
+            <div class="info">
+                <h1 class="title">Manuel Del Pozo Matías</h1>
+                <p class="description">
+                    Egresado de la facultad de Ingeniería de Sistemas de la Universidad de Lima, apacionado de la tecnología y el desarrollo de aplicaciones, con el apoyo de las tecnologías modernas, por las que han apostado las grandes StartUps del mundo.
+                    Siempre en busca de nuevos retos, y con la motivación para aprender algo nuevo cada día.
+                </p>
+            </div>
+            <figure class="avatar">
+                <img src="images/avatar.jpg" alt="madepozo">
+                <figcaption>madepozo</figcaption>
+            </figure>
+            <nav>
+                <ul>
+                    <li><a href="http://www.facebook.com/madepozo" class="icon-facebook"></a></li>
+                    <li><a href="http://www.twitter.com/madepozo" class="icon-twitter"></a></li>
+                    <li><a href="#" class="icon-google-plus"></a></li>
+                    <li><a href="http://www.linkedin.com/in/madepozo" class="icon-linkedin"></a></li>
+                    <li><a href="http://www.github.com/madepozo" class="icon-github"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <section></section>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js" />
+    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
