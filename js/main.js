@@ -1,4 +1,4 @@
-var angularCV = angular.module('angularCV', []);
+var angularCVApp = angular.module('angularCVApp', ['ngRoute']);
 
 var courses = {
 	1 : {
@@ -27,3 +27,34 @@ function mainController ($scope) {
 	$scope.courses = courses;
 	
 }
+
+angularCVApp.config( function ($routeProvider) {
+	$routeProvider
+		.when('/education', {
+			templateUrl : 'pages/education.html',
+			controller  : 'mainController'
+		})
+		.when('/skills', {
+			templateUrl : 'pages/skills.html',
+			controller  : 'skillsController'
+		})
+		.when('/projects', {
+			templateUrl : 'pages/projects.html',
+			controller  : 'projectsController'
+		})
+		.otherwise({
+			redirectTo : '/'
+		});
+});
+
+angularCVApp.controller('mainController', function ($scope) {
+	$scope.title = 'Educación';
+});
+
+angularCVApp.controller('skillsController', function ($scope) {
+	$scope.title = 'Habilidades';
+});
+
+angularCVApp.controller('projectsController', function ($scope) {
+	$scope.title = 'Proyectos';
+});

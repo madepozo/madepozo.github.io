@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="angularCV">
+<html lang="en" ng-app="angularCVApp">
 <head>
     <meta charset="UTF-8">
     <title>CV - Madepozo</title>
@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body ng-controller="mainController">
-    
     <div class="container">
         <header>
             <div class="info">
@@ -25,21 +24,39 @@
                     <figcaption>madepozo</figcaption>
                     <span class="nota"></span>  
                 </figure>
-                <nav>
-                    <span class="follow">Sigueme en:</span>
+                <div class="menu">
+                    <span class="follow">Sigue me:</span>
                     <ul>
-                        <li><a href="http://www.facebook.com/madepozo" class="icon-facebook"></a></li>
-                        <li><a href="http://www.twitter.com/madepozo" class="icon-twitter"></a></li>
-                        <li><a href="#" class="icon-google-plus"></a></li>
-                        <li><a href="http://www.linkedin.com/in/madepozo" class="icon-linkedin"></a></li>
-                        <li><a href="http://www.github.com/madepozo" class="icon-github"></a></li>
+                        <li><a href="http://www.facebook.com/madepozo" target="_blank" class="icon-facebook"></a></li>
+                        <li><a href="http://www.twitter.com/madepozo" class="icon-twitter" target="_blank"></a></li>
+                        <li><a href="#" class="icon-google-plus" target="_blank"></a></li>
+                        <li><a href="http://www.linkedin.com/in/madepozo" class="icon-linkedin" target="_blank"></a></li>
+                        <li><a href="http://www.github.com/madepozo" class="icon-github" target="_blank"></a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
         </header>
-        <section></section>
+        <nav>
+            <ul>
+                <li><a href="#education">Educación</a></li>
+                <li><a href="#skills">Conocimientos</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div id="main">
+                <div ng-view>
+                    
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>CV madepozo</p>
+            <p>Lima, 2014</p>
+        </footer>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.7/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.min.js"></script>
     </script>
     <script src="js/main.js"></script>
 </body>
