@@ -322,17 +322,32 @@ section
 	{
 		display: none;
 	}
+		
+	.education .superior,
+	.education .online
+	{
+		margin: 0;
+	}
 
 }
 
-/* education pages */
-.education {
+/* all pages */
+.page {
 	background: #eee;
 	border-radius: 1em;
 	padding: 0.5em;
 }
 
-.education .education_title
+.page h3
+{
+	color: #333;
+	font-size: 24px;
+	font-weight: normal;
+	text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.5);
+	margin: 0.3em 0;	
+}
+
+.page h2
 {
 	border-bottom: 2px solid #aaa;
 	border-radius: 0 0.6em 0.6em 0;
@@ -345,18 +360,15 @@ section
 	width: 96%;
 }
 
+/* Education page */
 .education .superior, .education .online
 {
 	padding: 0.1em 1.5em;
+	margin: 0 auto;
+	width: 85%;
 }
 
-.education h3
-{
-	color: #333;
-	font-size: 24px;
-	font-weight: normal;
-	text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.5);
-}
+
 
 .education .superior .education_info ,
 .education .superior .education_logo,
@@ -411,3 +423,28 @@ section
 	display: block;
 	text-align: center;
 }
+
+/* Skills page */
+
+.skills .development .technologies div
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 28%;
+	margin: 1%;
+}
+
+.skills .development .technologies div p
+{
+	font-size: 0.8em;
+	line-height: 50px;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.skills .development .technologies div .icon-dot
+{
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+}
+
+
