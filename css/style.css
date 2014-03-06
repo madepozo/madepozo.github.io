@@ -79,8 +79,9 @@
 
 .icon-dot:before {
 	content: "\e603";
-	color: orange;
+	color: #F80;
 	vertical-align: bottom;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 
 body
@@ -294,6 +295,10 @@ section
 		font-size: 20px;
 		line-height: 30px;
 	}
+	[class$="-dot"] {
+		font-size: 40px;
+		list-style: 40px;
+	}
 
 	header .social .menu ul li a{
 		height: 38px;
@@ -322,13 +327,27 @@ section
 	{
 		display: none;
 	}
-		
-	.education .superior,
-	.education .online
+	
+	.page h2
 	{
-		margin: 0;
+		min-width: 98%;
 	}
 
+	.education .type
+	{
+		margin: 0 1em;
+	}
+
+	.skills .development .technologies div
+	{
+		display: block;
+		min-width: 100%;
+	}
+
+	.skills .development .technologies div p
+	{
+		display:  inline-block;
+	}
 }
 
 /* all pages */
@@ -357,50 +376,42 @@ section
 	margin: 0 auto;
 	text-align: center;
 	text-shadow: 2px 1px 4px rgba(125, 205, 125, 0.8);
-	width: 96%;
+	width: 90%;
 }
 
 /* Education page */
-.education .superior, .education .online
+.education .type
 {
 	padding: 0.1em 1.5em;
 	margin: 0 auto;
 	width: 85%;
 }
 
-
-
-.education .superior .education_info ,
-.education .superior .education_logo,
-.education .online .education_info ,
-.education .online .education_logo
+.education .type .education_info ,
+.education .type .education_logo
 {
 	display: inline-block;
 	vertical-align: top;
 }
 
-.education .superior .education_info p,
-.education .online .education_info p
+.education .type .education_info
+{
+	margin-left: 1.1em;
+}
+
+.education .type .education_info p
 {
 	line-height: 54px;
 	margin: 0;
 }
 
-.education .superior .education_info p span,
-.education .online .education_info p span
-{
-	text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
-}
-
-.education .superior .education_logo,
-.education .online .education_logo
+.education .type .education_logo
 {
 	margin: 0;
 	float: right;
 }
 
-.education .superior .education_logo a,
-.education .online .education_logo a
+.education .type .education_logo a,
 {
 	color: rgb(53, 62, 86);
 	font-size: 13px;
@@ -426,7 +437,7 @@ section
 
 /* Skills page */
 
-.skills .development .technologies div
+.skills .development .technologies .category
 {
 	display: inline-block;
 	vertical-align: top;
@@ -434,17 +445,45 @@ section
 	margin: 1%;
 }
 
-.skills .development .technologies div p
+.skills .management .category
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 28%;
+	margin: 1%;
+}
+
+.skills .category h4
+{
+	margin: 0.4em 0 0 1em;
+	color: rgb(86, 77, 189);
+}
+
+.skills .category p
 {
 	font-size: 0.8em;
 	line-height: 50px;
 	vertical-align: middle;
 	margin: 0;
+	font-size: 12px;
 }
 
-.skills .development .technologies div .icon-dot
+.skills .skill
 {
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+	padding: 0.1em 1.5em;
+	margin: 0 auto;
+	width: 85%;
 }
 
+
+/* styles for animation with jQuery*/
+
+.fixed {
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
+	margin: 0;
+	border-radius: 0;
+}
 
