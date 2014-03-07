@@ -1,28 +1,5 @@
 var angularCVApp = angular.module('angularCVApp', ['ngRoute']);
 
-var courses = {
-	1 : {
-		name : 'Diseño y Desarrollo Web Online',
-		duration : '3 meses de Contenido Online',
-		certificate : '#',
-	},
-	2 : {
-		name : 'Profesional de BackEnd',
-		duration : '3 meses de Contenido Online',
-		certificate : '#',
-	},
-	3 : {
-		name : 'Programación en Android',
-		duration : '3 meses de Contenido Online',
-		certificate : '#',
-	},
-	4 : {
-		name : 'Profesional de FrontEnd',
-		duration : '3 meses de Contenido Online',
-		certificate : '#',
-	}
-}
-
 var accounts = {
 	1 : {
 		'url' : 'https://facebook.com/madepozo',
@@ -52,6 +29,10 @@ function mainController ($scope) {
 
 angularCVApp.config( function ($routeProvider) {
 	$routeProvider
+		.when('/', {
+			templateUrl : 'pages/home.html',
+			controller  : 'homeController'
+		})
 		.when('/education', {
 			templateUrl : 'pages/education.html',
 			controller  : 'educationController'
@@ -69,12 +50,23 @@ angularCVApp.config( function ($routeProvider) {
 		});
 });
 
+angularCVApp.controller('homeController', function ($scope) {
+	$scope.title = 'Información';
+});
+
 angularCVApp.controller('educationController', function ($scope) {
 	$scope.title = 'Educación';
 });
 
 angularCVApp.controller('skillsController', function ($scope) {
 	$scope.title = 'Conocimientos';
+	$('.category h4').hover(
+		function () {
+			$(this).parent('.category').find('.box-hover').css({'display':'block'});
+		}, function () {
+			$( this ).parent('.category').find('.box-hover').css({'display':'none'});
+		}
+	);	
 });
 
 angularCVApp.controller('projectsController', function ($scope) {

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css"> 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="public/css/normalize.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
 </head>
 <body ng-controller="mainController">
     <div class="container">
@@ -21,7 +21,7 @@
             </div>
             <div class="social">
                 <figure class="avatar">
-                    <img src="images/avatar.jpg" alt="madepozo">
+                    <img src="public/images/avatar.jpg" alt="madepozo">
                     <figcaption>madepozo</figcaption>
                     <span class="nota"></span>  
                 </figure>
@@ -37,27 +37,26 @@
         </header>
         <nav>
             <ul>
+                <li><a href="/">Información</a></li>
                 <li><a href="#education">Educación</a></li>
                 <li><a href="#skills">Conocimientos</a></li>
-                <!--<li><a href="#projects">Proyectos</a></li>-->
+                <!-- <li><a href="#projects">Proyectos</a></li> -->
             </ul>
         </nav>
         <section>
             <div id="main">
                 <div ng-view>
-                    
                 </div>
             </div>
         </section>
         <footer>
-            <p>CV madepozo</p>
-            <p>Lima, 2014</p>
+            <p>Curriculum Vitae de Manuel Del Pozo</p>
         </footer>
     </div>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.7/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!--<script src="js/animation.js"></script>-->
-    <script src="js/main.js"></script>
+    <script src="public/js/animation.js"></script>
+    <script src="public/js/main.js"></script>
 </body>
 </html>

@@ -46,6 +46,14 @@
 	color: #eee;
 }
 
+.icon-home:before {
+	content: "\e604";
+	color: rgba(0, 0, 0, 0.4);
+	line-height: 25px;
+	font-size: 25px;
+	margin-right: 0.5em;
+}
+
 .icon-facebook:before{
 	content: "\e600";
 }
@@ -94,17 +102,19 @@ body
 footer
 {
 	background: #eee;
-	border-radius: 1em;
+	border-radius: 1em 1em 0 0;
 	bottom: 0;
 	width: 100%;
 	text-align: center;
+	display: block;
+	padding: 1em 0;
 }
 
 footer p
 {
-	padding: 0.2em 0.5em;
+	color: #444;
+	font-size: 1.4em;
 	margin: 0;
-	font-size: 1.2em;
 }
 
 header
@@ -264,6 +274,12 @@ section
 	margin-bottom: 1em;
 }
 
+strong
+{
+	font-style: italic;
+	text-decoration: underline;
+}
+
 .container
 {
 	margin: 0 auto;
@@ -271,7 +287,8 @@ section
 	width: 100%;
 }
 
-@media screen and (min-width :700px){
+
+@media screen and (min-width :720px){
 	.container
 	{
 		width: 85%;
@@ -322,7 +339,7 @@ section
 	}
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 720px){
 	header .social .avatar .nota
 	{
 		display: none;
@@ -338,13 +355,13 @@ section
 		margin: 0 1em;
 	}
 
-	.skills .development .technologies div
+	.skills .skill .category
 	{
 		display: block;
 		min-width: 100%;
 	}
 
-	.skills .development .technologies div p
+	.skills .skill .category p
 	{
 		display:  inline-block;
 	}
@@ -375,7 +392,7 @@ section
 	font-size: 2em;
 	margin: 0 auto;
 	text-align: center;
-	text-shadow: 2px 1px 4px rgba(125, 205, 125, 0.8);
+	text-shadow: 2px 1px 4px rgba(185, 205, 175, 0.8);
 	width: 90%;
 }
 
@@ -403,6 +420,11 @@ section
 {
 	line-height: 54px;
 	margin: 0;
+}
+
+.education .type .education_info p span
+{
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
 }
 
 .education .type .education_logo
@@ -441,7 +463,7 @@ section
 {
 	display: inline-block;
 	vertical-align: top;
-	width: 28%;
+	width: 29%;
 	margin: 1%;
 }
 
@@ -449,14 +471,22 @@ section
 {
 	display: inline-block;
 	vertical-align: top;
-	width: 28%;
+	width: 29%;
 	margin: 1%;
+}
+
+.skills .category
+{
+	position: relative;
 }
 
 .skills .category h4
 {
 	margin: 0.4em 0 0 1em;
-	color: rgb(86, 77, 189);
+	color: rgb(77, 130, 187);
+	cursor: pointer;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	transition: all 0.4s ease-out;
 }
 
 .skills .category p
@@ -465,7 +495,30 @@ section
 	line-height: 50px;
 	vertical-align: middle;
 	margin: 0;
-	font-size: 12px;
+	font-size: 13px;
+	text-shadow: 0px 1px 0px rgba(205,245,235,0.6);
+}
+
+.skills .category .box-hover
+{
+	position: absolute;
+	top: 25px;
+	left: 1em;
+	width: 100%;
+	margin: 0 auto;
+	display: none;
+	background: #4BF;
+	border-radius: 0 0 0.7em 0.7em;
+	color: #fff;
+	z-index: 10;
+}
+
+.skills .category .box-hover .more-info
+{
+	padding: 0.2em 1.2em;
+	line-height: 25px;
+	text-align: justify;
+	font-size: 0.9em;
 }
 
 .skills .skill
@@ -473,6 +526,25 @@ section
 	padding: 0.1em 1.5em;
 	margin: 0 auto;
 	width: 85%;
+}
+
+/* information page */
+.home .personal_information
+{	
+	padding: 0.1em 1.5em;
+	margin: 0 auto;
+	width: 85%;
+}
+
+.home .personal_information p
+{
+	line-height: 54px;
+	margin: 0;
+}
+
+.home .personal_information p span
+{
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
 }
 
 
