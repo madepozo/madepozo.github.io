@@ -127,9 +127,7 @@ footer
 	background: #eee;
 	border-radius: 1em 1em 0 0;
 	bottom: 0;
-	width: 100%;
 	text-align: center;
-	display: block;
 	padding: 1em 0.2em;
 }
 
@@ -306,7 +304,6 @@ strong
 .container
 {
 	margin: 0 auto;
-	padding: 0 auto;
 	width: 100%;
 }
 
@@ -536,6 +533,12 @@ strong
 	background: #ccc;
 	border-radius: 0.4em 0.4em 0 0;
 	padding: 0 0.5em;
+	text-align: center;
+}
+
+.skills .category h4:hover
+{
+	border-radius: 0;
 }
 
 .skills .category p
