@@ -16,8 +16,8 @@
 .icon-linkedin:before{content:"\e605"}
 .icon-google-plus:before{content:"\e602"}
 body{background:#22a2d8;font-family:'Open sans';font-size:16px}
-footer{background:#eee;border-radius:1em 1em 0 0;bottom:0;padding:1.2em .2em;text-align:center;}
-footer p{color:#444;font-size:1..2em;margin:0}
+footer{background:#eee;border-radius:1em 1em 0 0;bottom:0;padding:1em .2em;text-align:center;}
+footer p{color:#444;font-size:1.2em;margin:0}
 header{background:#eee;border-radius:1em;box-shadow:3px 3px 5px rgba(0,0,0,0.5);margin:.8em 0 0 0;}
 header .info{font-size:16px;padding:.2em;}
 header .info .title{color:#323;text-align:center}
@@ -36,8 +36,8 @@ header .social .avatar,header .social .menu{display:inline-block;vertical-align:
 nav{margin:.4em 0;}
 nav ul{margin:0;text-align:center;}
 nav ul li{display:inline-block;list-style:none;margin-right:.5em;padding:.6em 0;}
-nav ul li a{background:#3dc264;border-radius:5px;color:#fff;font-size:14px;font-weight:normal;padding:.4em .6em;text-decoration:none;transition:all .4s ease-out;}
-nav ul li a:hover{background:#fff;border-radius:0;color:rgba(0,0,0,0.8);font-weight:normal;padding:.4em .6em}
+nav ul li a{background:#3dc264;border-radius:5px;color:#fefefe;font-size:14px;padding:.4em .6em;text-decoration:none;transition:all .4s ease-out;}
+nav ul li a:hover{background:#fff;border-radius:0;color:rgba(0,0,0,0.8);}
 section{border-radius:1em;box-shadow:3px 3px 5px rgba(0,0,0,0.5);margin-bottom:1em}
 strong{font-style:italic;text-decoration:underline}
 .container{margin:0 auto;width:100%}
@@ -45,7 +45,7 @@ strong{font-style:italic;text-decoration:underline}
 .page h2{border-bottom:2px solid #aaa;border-radius:0 .6em .6em 0;box-shadow:1px 0 2px rgba(0,0,0,0.8);color:#777;font-size:2em;margin:0 auto;text-align:center;text-shadow:2px 1px 4px rgba(185,205,175,0.8);width:90%}
 .page h3{color:#333;font-size:24px;font-weight:normal;margin:.3em 0;text-shadow:1px 2px 0 rgba(0,0,0,0.5)}
 .education .type{padding:.1em 1.5em;margin:0 auto;width:85%;}
-.education .type .link-mobile{display:none}
+.education .type .link-mobile{display:none; font-size: 0.8em; color: #F50;margin-top: -40px;}
 .education .type .education_info{margin-left:1.1em;}
 .education .type .education_info p{line-height:54px;margin:0;}
 .education .type .education_info p span{text-shadow:0 1px 1px rgba(0,0,0,0.6)}
@@ -53,7 +53,7 @@ strong{font-style:italic;text-decoration:underline}
 .education .superior .education_logo img{border-radius:50%;width:113px}
 .education .online .education_logo img{width:130px}
 .education .type .education_info,.education .type .education_logo{display:inline-block;vertical-align:top}
-.education .type .education_logo a{color:rgb(53,62,86){font-size:13px}
+.education .type .education_logo a {color rgb(53,62,86);font-size:0.8em;color: #F86;}
 .education .superior .education_logo a,.education .online .education_logo a{display:block;text-align:center}
 .skills .category{display:inline-block;margin:1%;vertical-align:top;width:29%;position:relative;}
 .skills .category h4{background:#1987e1;border-bottom:1px solid rgba(0,0,0,0.8);border-radius:.4em .4em 0 0;color:#fff;cursor:pointer;margin:.4em 0 0 0;padding:0 .5em;text-align:center;transition:all .5s ease-in;}
@@ -84,8 +84,10 @@ header .social .avatar{margin:0}
 header .info .description{font-size:16px}
 header .social .avatar .nota{top:-20px}
 .education .type .education_info p span:last-child{display:block;margin-left:2.5em}
+.education .type .link-mobile{display: inline-block; float:right;}
+.education .type .education_logo{display: none;}
 }@media screen and (max-width: 720px){header .social .avatar .nota{display:none}
-footer{padding: 1.4em .2em; }
+footer{padding: 1.4em .2em;}
 .page h2{min-width:98%}
 .education .type{margin:0 1em}
 .skills .skill .category{width:100%;margin-bottom:.8em}
