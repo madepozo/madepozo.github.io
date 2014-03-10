@@ -16,8 +16,8 @@
 .icon-linkedin:before{content:"\e605"}
 .icon-google-plus:before{content:"\e602"}
 body{background:#22a2d8;font-family:'Open sans';font-size:16px}
-footer{background:#eee;border-radius:1em 1em 0 0;bottom:0;padding:1em .2em;text-align:center;}
-footer p{color:#444;font-size:1.2em;margin:0}
+footer{background:#eee;border-radius:1em 1em 0 0;bottom:0;padding:1.2em .2em;text-align:center;}
+footer p{color:#444;font-size:1..2em;margin:0}
 header{background:#eee;border-radius:1em;box-shadow:3px 3px 5px rgba(0,0,0,0.5);margin:.8em 0 0 0;}
 header .info{font-size:16px;padding:.2em;}
 header .info .title{color:#323;text-align:center}
@@ -53,7 +53,7 @@ strong{font-style:italic;text-decoration:underline}
 .education .superior .education_logo img{border-radius:50%;width:113px}
 .education .online .education_logo img{width:130px}
 .education .type .education_info,.education .type .education_logo{display:inline-block;vertical-align:top}
-.education .type .education_logo a,color rgb(53,62,86){font-size:13px}
+.education .type .education_logo a{color:rgb(53,62,86){font-size:13px}
 .education .superior .education_logo a,.education .online .education_logo a{display:block;text-align:center}
 .skills .category{display:inline-block;margin:1%;vertical-align:top;width:29%;position:relative;}
 .skills .category h4{background:#1987e1;border-bottom:1px solid rgba(0,0,0,0.8);border-radius:.4em .4em 0 0;color:#fff;cursor:pointer;margin:.4em 0 0 0;padding:0 .5em;text-align:center;transition:all .5s ease-in;}
@@ -85,6 +85,7 @@ header .info .description{font-size:16px}
 header .social .avatar .nota{top:-20px}
 .education .type .education_info p span:last-child{display:block;margin-left:2.5em}
 }@media screen and (max-width: 720px){header .social .avatar .nota{display:none}
+footer{padding: 1.4em .2em; }
 .page h2{min-width:98%}
 .education .type{margin:0 1em}
 .skills .skill .category{width:100%;margin-bottom:.8em}
