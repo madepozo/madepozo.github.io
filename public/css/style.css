@@ -5,7 +5,7 @@
 .icon-envelope:before{content:"\e608";color:#fff;vertical-align:middle}
 .icon-mobile:before{content:"\e60b";color:#fff;vertical-align:middle}
 .icon-phone:before{content:"\e60c";color:#fff;vertical-align:middle}
-.icon-twitter:before{content:"\e609"}
+.icon-twitter:before{content:"\e604"}
 .menu ul li a.icon-twitter:hover{background:#55acee;color:#fff}
 .menu ul li a.icon-github:hover{background:#444;color:#eee}
 .menu ul li a.icon-facebook:hover{background:#3b5998;color:#fff}
@@ -38,6 +38,7 @@ nav ul{margin:0;text-align:center;}
 nav ul li{display:inline-block;list-style:none;margin-right:.5em;padding:.6em 0;}
 nav ul li a{background:#3dc264;border-radius:5px;color:#fefefe;font-size:14px;padding:.4em .6em;text-decoration:none;transition:all .4s ease-out;}
 nav ul li a:hover{background:#fff;border-radius:0;color:rgba(0,0,0,0.8);}
+nav ul li a::selection{background:#fff;border-radius:0;color:rgba(0,0,0,0.8);}
 section{border-radius:1em;box-shadow:3px 3px 5px rgba(0,0,0,0.5);margin-bottom:1em}
 strong{font-style:italic;text-decoration:underline}
 .container{margin:0 auto;width:100%}
