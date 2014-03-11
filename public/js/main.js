@@ -23,27 +23,32 @@ var accounts = {
 	}
 } 
 
-function mainController ($scope) {
+function mainController ($scope, $route) {
 	$scope.accounts = accounts;
+	$scope.$route = $route;
 }
 
 angularCVApp.config( function ($routeProvider) {
 	$routeProvider
 		.when('/', {
 			templateUrl : 'pages/home.html',
-			controller  : 'homeController'
+			controller  : 'homeController',
+			activetab   : 'home'
 		})
 		.when('/education', {
 			templateUrl : 'pages/education.html',
-			controller  : 'educationController'
+			controller  : 'educationController',
+			activetab   : 'education'
 		})
 		.when('/skills', {
 			templateUrl : 'pages/skills.html',
-			controller  : 'skillsController'
+			controller  : 'skillsController',
+			activetab   : 'skills'
 		})
 		.when('/projects', {
 			templateUrl : 'pages/projects.html',
-			controller  : 'projectsController'
+			controller  : 'projectsController',
+			activetab   : 'projects'
 		})
 		.otherwise({
 			redirectTo : '/'

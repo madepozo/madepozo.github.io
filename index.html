@@ -37,10 +37,10 @@
         </header>
         <nav>
             <ul>
-                <li><a href="/">Información</a></li>
-                <li><a href="#education">Educación</a></li>
-                <li><a href="#skills">Conocimientos</a></li>
-                <!-- <li><a href="#projects">Proyectos</a></li> -->
+                <li><a ng-class="{active: $route.current.activetab == 'home'}" href="/">Información</a></li>
+                <li><a ng-class="{active: $route.current.activetab == 'education'}"href="#education">Educación</a></li>
+                <li><a ng-class="{active: $route.current.activetab == 'skills'}" href="#skills">Conocimientos</a></li>
+                <!-- <li><a ng-class="{active: $route.current.activetab == 'projects'}" href="#projects">Proyectos</a></li> -->
             </ul>
         </nav>
         <section>
@@ -63,7 +63,7 @@
       ga('send', 'pageview');
 
     </script>
-    <script src="public/prefixfree.min.js"></script>
+    <script src="public/js/prefixfree.min.js"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.7/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.min.js"></script>

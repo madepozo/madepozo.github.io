@@ -37,10 +37,10 @@ nav{margin:.4em 0;}
 nav ul{margin:0;text-align:center;}
 nav ul li{display:inline-block;list-style:none;margin-right:.5em;padding:.6em 0;}
 nav ul li a{background:#3dc264;border-radius:5px;color:#fefefe;font-size:14px;padding:.4em .6em;text-decoration:none;transition:all .4s ease-out;}
-nav ul li a:hover{background:#fff;border-radius:0;color:rgba(0,0,0,0.8);}
-nav ul li a::selection{background:#fff;border-radius:0;color:rgba(0,0,0,0.8);}
+nav ul li a:hover{background:#fff;border-bottom: 1px solid #3dc264;border-radius:0;color:rgba(0,0,0,0.8);}
 section{border-radius:1em;box-shadow:3px 3px 5px rgba(0,0,0,0.5);margin-bottom:1em}
 strong{font-style:italic;text-decoration:underline}
+.active {background:#fff;border-bottom: 1px solid #3dc264;border-radius:0;color:rgba(0,0,0,0.8);}
 .container{margin:0 auto;width:100%}
 .page{background:#eee;border-radius:1em;padding:.5em;}
 .page h2{border-bottom:2px solid #aaa;border-radius:0 .6em .6em 0;box-shadow:1px 0 2px rgba(0,0,0,0.8);color:#777;font-size:2em;margin:0 auto;text-align:center;text-shadow:2px 1px 4px rgba(185,205,175,0.8);width:90%}
