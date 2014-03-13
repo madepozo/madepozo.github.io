@@ -31,7 +31,7 @@ header .social ul a{background:#fff;border-radius:50%;display:block;height:50px;
 header .social .avatar{margin:0 1em;position:relative;}
 header .social .avatar figcaption{color:#f40;font-size:1.1em;text-align:center}
 header .social .avatar img{border-radius:50%;width:80px}
-header .social .avatar .nota{border-left:30px solid transparent;border-right:30px solid transparent;border-top:15px solid #1987e1;content:"";left:20%;position:absolute;top:-30px}
+header .social .avatar .nota{border-left:30px solid transparent;border-right:30px solid transparent;border-top:15px solid #1987e1;content:"";left:20%;position:absolute;top:-35px}
 header .social .avatar,header .social .menu{display:inline-block;vertical-align:middle}
 nav{margin:.7em 0;}
 nav ul{margin:0;text-align:center;}
