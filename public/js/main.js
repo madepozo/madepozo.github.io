@@ -26,6 +26,10 @@ var accounts = {
 function mainController ($scope, $route) {
 	$scope.accounts = accounts;
 	$scope.$route = $route;
+	$scope.description = 'Egresado de la facultad de Ingeniería de Sistemas de la Universidad de Lima, '+
+						 'apasionado por la tecnología y el desarrollo de aplicaciones, con tecnologías por '+
+						 'las que han apostado las grandes StartUps del mundo. '+
+						 'Siempre en busca de nuevos retos, y con la motivación para aprender algo nuevo cada día.'
 }
 
 angularCVApp.config( function ($routeProvider) {
@@ -57,6 +61,11 @@ angularCVApp.config( function ($routeProvider) {
 
 angularCVApp.controller('homeController', function ($scope) {
 	$scope.title = 'Información';
+	$scope.info = 'Soy Manuel Del Pozo, tengo 23 años, acabo de concluir mis estudios en la Universidad de Lima, '+
+	              'la carrera de Ing. de Sistemas. Ahora busco nuevos retos profesionales enfocado en el '+
+	              'desarrollo de aplicaciones. Mis conocimientos y experiencia lo detallo en las siguientes opciones. '+
+	              'Soy autodidacta, siempre estoy aprendiendo cosas nuevas cada día, quiero ser parte de un gran equipo '+
+	              'de desarrollo para crear aplicaciones que involucre mucha tecnología. Pueden contactarme a través de los siguientes medios.'
 });
 
 angularCVApp.controller('educationController', function ($scope) {
