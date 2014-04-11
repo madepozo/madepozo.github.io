@@ -27,9 +27,8 @@ function mainController ($scope, $route) {
 	$scope.accounts = accounts;
 	$scope.$route = $route;
 	$scope.description = 'Alumno en Mejorando.la, buscando ser un profesional de la web con los cursos de : Backend y Frontend Profesional, ' +
-						 'Diseño Web, Diseño Gráfico y UX, Estrategia Digital y Marketing, Android, iOS y PHP con Laravel\n'+
-						 'Leyendo actualmente : "JAVASCRIPT: The Good Parts". '+
-						 'Siempre en busca de nuevos retos, y con la motivación para aprender algo nuevo cada día.'
+						 'Diseño Web, Diseño Gráfico y UX, Estrategia Digital y Marketing, Android, iOS y PHP con Laravel. '+
+						 'Leyendo actualmente : "JAVASCRIPT: The Good Parts" y siempre en busca de nuevos retos, y con la motivación para aprender algo nuevo cada día.'
 }
 
 angularCVApp.config( function ($routeProvider) {
