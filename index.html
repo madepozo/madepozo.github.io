@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="CV Manuel Del Pozo Matías : Ando en busca de nuevas aventuras en el desarrollo de aplicaciones web, en este sitio detallo mi CV profesional." />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans|Nunito' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="public/css/normalize.css" />
     <link rel="stylesheet" href="public/css/style.css" />
 </head>
 <body ng-controller="mainController">
@@ -64,9 +63,85 @@
     </script>
 
     <!--<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.7/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.min.js"></script>
+    <script  src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.7/angular.min.js"></script>
+    <script  src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.min.js"></script>
     <!--<script src="public/js/animation.js"></script>-->
-    <script src="public/js/main.js"></script>
+    <script>
+      var accounts = {
+        1 : {
+          'url' : 'https://facebook.com/madepozo',
+          'class' : 'icon-facebook'
+        },
+        2 : {
+          'url' : 'https://twitter.com/madepozo',
+          'class' : 'icon-twitter'
+        },
+        3 : {
+          'url' : 'https://plus.google.com/112057101667217560964/',
+          'class' : 'icon-google-plus'
+        },
+        4 : {
+          'url' : 'https://www.linkedin.com/in/madepozo',
+          'class' : 'icon-linkedin'
+        },
+        5 : {
+          'url' : 'https://github.com/madepozo',
+          'class' : 'icon-github'
+        }
+      }
+
+      angular.module('angularCVApp', ['ngRoute'])
+        .config( function ($routeProvider) {
+          $routeProvider
+            .when('/', {
+              templateUrl : 'pages/home.html',
+              controller  : 'homeController',
+              activetab   : 'home'
+            })
+            .when('/education', {
+              templateUrl : 'pages/education.html',
+              controller  : 'educationController',
+              activetab   : 'education'
+            })
+            .when('/skills', {
+              templateUrl : 'pages/skills.html',
+              controller  : 'skillsController',
+              activetab   : 'skills'
+            })
+            .when('/projects', {
+              templateUrl : 'pages/projects.html',
+              controller  : 'projectsController',
+              activetab   : 'projects'
+            })
+            .otherwise({
+              redirectTo : '/'
+            });
+        })
+        .controller('homeController', function ($scope) {
+          $scope.title = 'Información';
+          $scope.info = 'Soy Manuel Del Pozo y estoy en busco de nuevos retos profesionales enfocado en el '+
+                        'desarrollo de aplicaciones. Mis conocimientos y experiencia lo detallo en las siguientes opciones. '+
+                        'Soy autodidacta, siempre estoy aprendiendo cosas nuevas cada día, quiero ser parte de un gran equipo '+
+                        'de desarrollo para crear aplicaciones que involucre tecnología moderna	. Pueden contactarme a través de los siguientes medios.'
+        })
+        .controller('educationController', function ($scope) {
+          $scope.title = 'Educación';
+        })
+        .controller('skillsController', function ($scope) {
+          $scope.title = 'Conocimientos';
+        })
+        .controller('projectsController', function ($scope) {
+          $scope.title = 'Proyectos';
+        });
+
+      function mainController ($scope, $route) {
+        $scope.accounts = accounts;
+        $scope.$route = $route;
+        $scope.description = 'Alumno en Mejorando.la, buscando ser un profesional de la web con los cursos de : Backend y Frontend Profesional, ' +
+                  'Diseño Web, Diseño Gráfico y UX, Estrategia Digital y Marketing, Android, iOS y PHP con Laravel. '+
+                  'Leyendo actualmente : "JAVASCRIPT: The Good Parts, Secrets of the JavaScript Ninja". Siempre en busca de nuevos retos, y con la motivación para aprender algo nuevo cada día.'
+      }
+
+    </script>
 </body>
 </html>
