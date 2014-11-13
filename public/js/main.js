@@ -60,7 +60,7 @@ angularCVApp.config( function ($routeProvider) {
 
 angularCVApp.controller('homeController', function ($scope) {
 	$scope.title = 'Información';
-	$scope.info = 'Soy Manuel Del Pozo, tengo 23 años y estoy en busco nuevos retos profesionales enfocado en el '+
+	$scope.info = 'Soy Manuel Del Pozo y estoy en busco de nuevos retos profesionales enfocado en el '+
 	              'desarrollo de aplicaciones. Mis conocimientos y experiencia lo detallo en las siguientes opciones. '+
 	              'Soy autodidacta, siempre estoy aprendiendo cosas nuevas cada día, quiero ser parte de un gran equipo '+
 	              'de desarrollo para crear aplicaciones que involucre tecnología moderna	. Pueden contactarme a través de los siguientes medios.'
@@ -72,13 +72,6 @@ angularCVApp.controller('educationController', function ($scope) {
 
 angularCVApp.controller('skillsController', function ($scope) {
 	$scope.title = 'Conocimientos';
-	$('.category h4').hover(
-		function () {
-			$(this).parent('.category').find('.box-hover').css({'display':'block'});
-		}, function () {
-			$( this ).parent('.category').find('.box-hover').css({'display':'none'});
-		}
-	);
 });
 
 angularCVApp.controller('projectsController', function ($scope) {
