@@ -223,10 +223,11 @@ th {
   line-height: 50px;
   speak: none;
   text-transform: none;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
   -ms-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 .icon-at:before {
   content: "\e607";
@@ -298,6 +299,7 @@ body {
 footer {
   background: #eee;
   -webkit-border-radius: 1em 1em 0 0;
+  border-radius: 1em 1em 0 0;
   bottom: 0;
   margin-top: 1.4em;
   padding: 0.6em 0;
@@ -314,7 +316,9 @@ footer p {
 header {
   background: #eee;
   -webkit-border-radius: 1em;
+  border-radius: 1em;
   -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
   margin: 0.8em 0 0 0;
 }
 header .info {
@@ -333,6 +337,7 @@ header .info .description {
   background: #1987e1;
   border-bottom: 3px solid #ccc;
   -webkit-border-radius: 0.8em 0.8em 1em;
+  border-radius: 0.8em 0.8em 1em;
   color: #fff;
   font-size: 1em;
   font-weight: normal;
@@ -364,6 +369,7 @@ header .social ul li:nth-child(even) {
 header .social ul a {
   background: #fff;
   -webkit-border-radius: 50%;
+  border-radius: 50%;
   display: block;
   height: 50px;
   padding: 0.3em;
@@ -382,6 +388,7 @@ header .social .avatar figcaption {
 }
 header .social .avatar img {
   -webkit-border-radius: 50%;
+  border-radius: 50%;
   width: 80px;
 }
 header .social .avatar .nota {
@@ -410,29 +417,33 @@ nav ul li {
   list-style: none;
   margin-right: 0.5em;
   padding: 1em 0;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
   -ms-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 nav ul li:active {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
   -o-transform: scale(0.9);
   -ms-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
 }
 nav ul li a {
   border-bottom: 3px solid #009e42;
   background: #00b84e;
   -webkit-border-radius: 5px;
+  border-radius: 5px;
   color: #fefefe;
   font-size: 14px;
   padding: 0.5em 0.6em;
   text-decoration: none;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
   -ms-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 nav ul li a:hover {
   background: #fff;
@@ -441,7 +452,9 @@ nav ul li a:hover {
 }
 section {
   -webkit-border-radius: 1em;
+  border-radius: 1em;
   -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
   margin-bottom: 1em;
 }
 strong {
@@ -454,6 +467,7 @@ strong {
 }
 .box-shadow-social {
   -webkit-box-shadow: inset 0 0 5px #f9f7f5;
+  box-shadow: inset 0 0 5px #f9f7f5;
 }
 .container {
   margin: 0 auto;
@@ -462,12 +476,15 @@ strong {
 .page {
   background: #eee;
   -webkit-border-radius: 1em;
+  border-radius: 1em;
   padding: 0.8em 0.5em 1.2em 0.5em;
 }
 .page h2 {
   border-bottom: 2px solid #aaa;
   -webkit-border-radius: 0 0.6em 0.6em 0;
+  border-radius: 0 0.6em 0.6em 0;
   -webkit-box-shadow: 1px 0 2px rgba(0,0,0,0.8);
+  box-shadow: 1px 0 2px rgba(0,0,0,0.8);
   color: #777;
   font-size: 2em;
   margin: 0 auto;
@@ -490,6 +507,7 @@ strong {
 .education .type .link-mobile {
   background: #ff4545;
   -webkit-border-radius: 5px;
+  border-radius: 5px;
   border-bottom: 3px solid #f00;
   color: #fff;
   display: none;
@@ -498,16 +516,18 @@ strong {
   margin-top: -40px;
   padding: 0.1em 0.7em;
   text-decoration: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .education .type .link-mobile:active {
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
   -o-transform: scale(0.95);
   -ms-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
 }
 .education .type .education_info {
   margin-left: 1.1em;
@@ -529,6 +549,7 @@ strong {
 }
 .education .superior .education_logo img {
   -webkit-border-radius: 50%;
+  border-radius: 50%;
   width: 140px;
 }
 .education .online .education_logo img {
@@ -547,6 +568,7 @@ strong {
 .education .superior .education_logo a {
   background: #ff4545;
   -webkit-border-radius: 5px;
+  border-radius: 5px;
   border-bottom: 3px solid #f00;
   color: #fff;
   display: block;
@@ -555,18 +577,20 @@ strong {
   padding: 0.2em 0.7em;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
   -o-transition: all 0.6s ease-in-out;
   -ms-transition: all 0.6s ease-in-out;
-  -moz-transition: all 0.6s ease-in-out;
-  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 .education .comunity .education_logo a:hover,
 .education .superior .education_logo a:hover,
 .education .online .education_logo a:hover {
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
   -o-transform: scale(0.95);
   -ms-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
 }
 .skills .category {
   display: inline-block;
@@ -579,19 +603,22 @@ strong {
   background: #1987e1;
   border-bottom: 1px solid rgba(0,0,0,0.8);
   -webkit-border-radius: 0.4em 0.4em 0 0;
+  border-radius: 0.4em 0.4em 0 0;
   color: #fff;
   cursor: pointer;
   margin: 0.4em 0 0 0;
   padding: 0 0.5em;
   text-align: center;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
   -ms-transition: all 0.5s ease-in;
-  -moz-transition: all 0.5s ease-in;
-  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 .skills .category h4:hover {
   background: #eee;
   -webkit-border-radius: 0;
+  border-radius: 0;
   color: #1987e1;
 }
 .skills .category h4:hover + .box-hover {
@@ -617,6 +644,7 @@ strong {
 .skills .category .box-hover {
   background: #1987e1;
   -webkit-border-radius: 0 0 0.7em 0.7em;
+  border-radius: 0 0 0.7em 0.7em;
   color: #fff;
   display: none;
   position: absolute;
@@ -644,6 +672,7 @@ strong {
   border-bottom: 2px solid #1987e1;
   border-top: 3px solid #1987e1;
   -webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
   color: #333;
   font-size: 1.1em;
   margin: 0.8em auto;
@@ -657,7 +686,9 @@ strong {
 .home .personal_information .contact p {
   background: #444;
   -webkit-border-radius: 0.6em;
+  border-radius: 0.6em;
   -webkit-box-shadow: inset 0 0 7px #fff;
+  box-shadow: inset 0 0 7px #fff;
   color: #fff;
   display: block;
   font-size: 1em;
@@ -724,6 +755,7 @@ strong {
   header {
     margin-top: 0;
     -webkit-border-radius: 0;
+    border-radius: 0;
   }
   header .info .description {
     font-size: 1em;
